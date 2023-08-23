@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "rspack serve",
-    "build": "rspack build"
+    "build": "rspack build",
+    "extract": "lingui extract",
+    "compile": "lingui compile --typescript"
   },
   "dependencies": {
     "@lingui/react": "^4.4.0",
