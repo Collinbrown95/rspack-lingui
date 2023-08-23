@@ -1,0 +1,1 @@
+/*eslint-disable*/export const messages=JSON.parse("{\"nwR43V\":[\"Attachment \",[\"name\"],\" saved\"],\"OVaF9k\":[\"Hello \",[\"name\"]],\"8bWV5m\":\"Message Inbox\"}");
