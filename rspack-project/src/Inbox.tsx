@@ -4,6 +4,8 @@ import { useLingui } from "@lingui/react";
 
 import { Trans, Plural } from "@lingui/macro";
 
+import LocaleSwitcher from './LocaleSwitcher';
+
 export default function Inbox() {
     const messages = [{}, {}];
     const messagesCount = messages.length;
@@ -11,11 +13,11 @@ export default function Inbox() {
     const markAsRead = () => {
         alert("Marked as read.");
     };
-
     const { i18n } = useLingui();
 
     return (
         <div>
+            <LocaleSwitcher />
             <h1><Trans>Message Inbox</Trans></h1>
             <p>
                 <Trans>
