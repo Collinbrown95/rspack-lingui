@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-08-23 09:53-0400\n"
+"POT-Creation-Date: 2023-08-23 13:28-0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,14 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/main.tsx:16
-msgid "Attachment {name} saved"
+#: src/Inbox.tsx:27
+msgid "{messagesCount, plural, one {There's # message in your inbox.} other {There are # messages in your inbox.}}"
 msgstr ""
 
-#: src/main.tsx:16
-#~ msgid "Hello {name}"
-#~ msgstr ""
+#: src/Inbox.tsx:29
+msgid "Last login on {0}."
+msgstr ""
 
-#: src/Inbox.tsx:17
-#~ msgid "Message Inbox"
-#~ msgstr ""
+#: src/Inbox.tsx:19
+msgid "Message Inbox"
+msgstr "Inbox D'envoyer"
+
+#: src/Inbox.tsx:21
+msgid "See all <0> unread messages </0>or x"
+msgstr ""
+
+#: src/main.tsx:21
+#~ msgid "test123"
+#~ msgstr "test123"

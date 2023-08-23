@@ -1,1 +1,1 @@
-/*eslint-disable*/export const messages=JSON.parse("{\"nwR43V\":[\"Attachment \",[\"name\"],\" saved\"],\"OVaF9k\":[\"Hello \",[\"name\"]],\"8bWV5m\":\"Message Inbox\"}");
+/*eslint-disable*/export const messages=JSON.parse("{\"iHvPFN\":[[\"messagesCount\",\"plural\",{\"one\":[\"There's \",\"#\",\" message in your inbox.\"],\"other\":[\"There are \",\"#\",\" messages in your inbox.\"]}]],\"ItXLVU\":[\"Last login on \",[\"0\"],\".\"],\"8bWV5m\":\"Message Inbox\",\"oR/C2G\":\"See all <0> unread messages </0>or x\",\"iAw73G\":\"test123\"}");
