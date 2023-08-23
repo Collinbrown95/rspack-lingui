@@ -3,25 +3,26 @@ import { createRoot } from "react-dom/client";
 
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
-import { messages } from "./locales/en/messages";
+import { messages as enMessages } from "./locales/en/messages";
+import { messages as frMessages } from "./locales/fr/messages";
 
-// import { Trans } from "@lingui/react";
-import { Trans } from "@lingui/macro";
 import Inbox from "./Inbox";
 
-i18n.load("en", messages);
+i18n.load({
+  "en": enMessages,
+  "fr": frMessages,
+});
+
 i18n.activate("en");
 
 const App = () => (
   <I18nProvider i18n={i18n}>
-    {/* <p><Trans id={"nwR43V"} message="Attachment {name} saved" values={{ name }} /></p> */}
-    <p><Trans>test123</Trans></p>
     <Inbox />
   </I18nProvider>
 );
 
 const container = document.getElementById('root');
-const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <App />
