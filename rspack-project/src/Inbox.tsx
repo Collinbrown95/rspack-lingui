@@ -1,5 +1,8 @@
 import React from "react";
 
+import { useLingui } from "@lingui/react";
+
+import { Trans, Plural } from "@lingui/macro";
 
 export default function Inbox() {
     const messages = [{}, {}];
@@ -9,25 +12,21 @@ export default function Inbox() {
         alert("Marked as read.");
     };
 
+    const { i18n } = useLingui();
+
     return (
         <div>
-            <h1>Message Inbox </h1>
-
+            <h1><Trans>Message Inbox</Trans></h1>
             <p>
-                See all < a href="/unread" > unread messages </a>
-                {" or "}x
-
+                <Trans>
+                    See all < a href="/unread" > unread messages </a>
+                    {" or "}x
+                </Trans>
             </p>
-
             <p>
-                {
-                    messagesCount === 1
-                        ? `There's ${messagesCount} message in your inbox.`
-                        : `There are ${messagesCount} messages in your inbox.`
-                }
+                <Plural value={messagesCount} one="There's # message in your inbox." other="There are # messages in your inbox." />
             </p>
-
-            < footer > Last login on {lastLogin.toLocaleDateString()}.</footer>
+            < footer > <Trans>Last login on {i18n.date(lastLogin)}.</Trans></footer>
         </div>
     );
 }
