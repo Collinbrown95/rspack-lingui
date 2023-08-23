@@ -21,8 +21,9 @@ export default function Inbox() {
             <h1><Trans>Message Inbox</Trans></h1>
             <p>
                 <Trans>
-                    See all < a href="/unread" > unread messages </a>
-                    {" or "}x
+                    See all <a href="/unread">unread messages </a>
+                    {" or "}
+                    <a onClick={markAsRead}>mark them</a> as read.
                 </Trans>
             </p>
             <p>
